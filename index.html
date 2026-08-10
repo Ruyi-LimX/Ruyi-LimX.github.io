@@ -1,29 +1,28 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Ruyi-LimX explores vision-language-action systems, real-robot learning, and responsive control."
+      content="龚志路的个人主页，聚焦 VLA 后训练、真实机器人学习、分层控制与机器人系统工程。"
     />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#0b0e13" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://ruyi-limx.github.io/" />
-    <meta property="og:title" content="Ruyi-LimX — Robotics, VLA & Embodied AI" />
+    <meta property="og:title" content="龚志路｜机器人学习与 VLA" />
     <meta
       property="og:description"
-      content="Building robot learning systems that connect data, post-training, deployment, and recovery."
+      content="深圳大学人工智能硕士在读，关注 VLA 后训练、真实机器人学习与机器人系统工程。"
     />
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/285504590?v=4" />
     <meta name="twitter:card" content="summary" />
 
     <link rel="canonical" href="https://ruyi-limx.github.io/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=1" />
-    <title>Ruyi-LimX — Robotics, VLA & Embodied AI</title>
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <title>龚志路｜机器人学习与 VLA</title>
 
     <script type="application/ld+json">
       {
@@ -31,17 +30,20 @@
         "@type": "ProfilePage",
         "mainEntity": {
           "@type": "Person",
-          "name": "Ruyi-LimX",
+          "name": "龚志路",
           "alternateName": "Ruyi-LimX",
           "url": "https://ruyi-limx.github.io/",
-          "image": "https://avatars.githubusercontent.com/u/285504590?v=4",
           "sameAs": ["https://github.com/Ruyi-LimX"],
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "深圳大学"
+          },
           "knowsAbout": [
-            "Robotics",
-            "Vision-Language-Action Models",
-            "Embodied AI",
-            "Real-Robot Learning",
-            "Responsive Control"
+            "机器人学习",
+            "视觉-语言-动作模型",
+            "强化学习",
+            "具身智能",
+            "嵌入式控制"
           ]
         }
       }
@@ -49,310 +51,336 @@
   </head>
 
   <body>
-    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
-    <div class="page-glow page-glow--one" aria-hidden="true"></div>
-    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">跳到正文</a>
 
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Ruyi-LimX home">
-        <span class="brand-mark" aria-hidden="true">R/</span>
-        <span class="brand-name">Ruyi-LimX</span>
-      </a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="返回龚志路个人主页顶部">
+          <strong>龚志路</strong>
+          <span>Ruyi-LimX</span>
+        </a>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#focus" data-i18n="nav.focus">Focus</a>
-        <a href="#system" data-i18n="nav.system">System</a>
-        <a href="#connect" data-i18n="nav.connect">Connect</a>
-      </nav>
+        <nav class="site-nav" aria-label="主要导航">
+          <a href="#experience">经历</a>
+          <a href="#project">项目</a>
+          <a href="#competitions">竞赛</a>
+          <a href="#education">教育</a>
+          <a href="#media">影像</a>
+        </nav>
 
-      <div class="header-actions">
-        <button class="utility-button language-toggle" type="button" data-language-toggle aria-label="切换为中文">
-          <span data-language-label>中文</span>
-        </button>
-        <button class="utility-button theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme">
-          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
-          </svg>
-          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5 8.5 8.5 0 1 0 20.5 14.3Z"></path>
-          </svg>
-        </button>
+        <a
+          class="header-link"
+          href="https://github.com/Ruyi-LimX"
+          target="_blank"
+          rel="me noopener noreferrer"
+        >
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
       </div>
     </header>
 
     <main id="main">
-      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy reveal">
-          <div class="eyebrow-row">
-            <span class="signal-dot" aria-hidden="true"></span>
-            <p class="eyebrow" data-i18n="hero.eyebrow">ROBOT LEARNING / FIELD NOTES</p>
-          </div>
-
-          <h1 id="hero-title">
-            <span data-i18n="hero.titleLead">Building robots that</span>
-            <span class="accent-text" data-i18n="hero.titleAccent">learn from reality.</span>
-          </h1>
-
-          <p class="hero-lede" data-i18n="hero.lede">
-            I explore vision-language-action systems, real-robot learning, and responsive control—connecting
-            data, post-training, deployment, and recovery.
+      <section class="hero page-shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">ROBOT LEARNING · VLA · EMBODIED AI</p>
+          <h1 id="hero-title">龚志路</h1>
+          <p class="hero-role">机器人学习与 VLA 方向硕士生</p>
+          <p class="hero-intro">
+            深圳大学人工智能硕士在读，关注 VLA 强化学习后训练、真实机器人部署与分层控制。
+            我的工作连接数据采集、模型训练、真机执行和失败恢复，也覆盖嵌入式控制与机器人硬件系统。
           </p>
-
-          <div class="hero-actions">
-            <a class="button button--primary" href="#focus">
-              <span data-i18n="hero.primaryCta">Explore the focus</span>
-              <svg viewBox="0 0 20 20" aria-hidden="true">
-                <path d="m7 4 6 6-6 6"></path>
-              </svg>
-            </a>
+          <div class="hero-actions" aria-label="联系方式">
+            <a class="button button-primary" href="mailto:2410815008@mails.szu.edu.cn">邮件联系</a>
             <a
-              class="button button--ghost"
+              class="button button-secondary"
               href="https://github.com/Ruyi-LimX"
               target="_blank"
               rel="me noopener noreferrer"
             >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"></path>
-              </svg>
-              <span>GitHub</span>
+              查看 GitHub <span aria-hidden="true">↗</span>
             </a>
           </div>
-
-          <div class="hero-sequence" aria-label="Data to feedback loop">
-            <span data-i18n="hero.sequenceData">DATA</span>
-            <i aria-hidden="true"></i>
-            <span data-i18n="hero.sequencePolicy">POLICY</span>
-            <i aria-hidden="true"></i>
-            <span data-i18n="hero.sequenceAction">ACTION</span>
-            <i aria-hidden="true"></i>
-            <span data-i18n="hero.sequenceFeedback">FEEDBACK</span>
-          </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Closed-loop robot learning diagram">
-          <div class="visual-frame">
-            <div class="visual-header">
-              <span class="visual-label">CLOSED_LOOP.SYS</span>
-              <span class="live-state"><i aria-hidden="true"></i><span data-i18n="hero.live">LIVE</span></span>
+        <aside class="hero-facts" aria-label="个人概况">
+          <dl>
+            <div>
+              <dt>当前</dt>
+              <dd>深圳大学 · 人工智能硕士在读</dd>
             </div>
+            <div>
+              <dt>方向</dt>
+              <dd>VLA 后训练、真实机器人学习</dd>
+            </div>
+            <div>
+              <dt>能力栈</dt>
+              <dd>算法、部署、嵌入式与硬件</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
 
-            <div class="orbit-stage" aria-hidden="true">
-              <div class="grid-plane"></div>
-              <div class="orbit orbit--outer"><span class="orbit-pulse"></span></div>
-              <div class="orbit orbit--middle"></div>
-              <div class="orbit orbit--inner"></div>
-              <div class="core-node">
-                <span class="core-kicker">VLA</span>
-                <strong>π</strong>
-                <span class="core-status">ADAPTIVE</span>
+      <section class="section page-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="section-label">EXPERIENCE</p>
+          <h2 id="experience-title">实习经历</h2>
+        </div>
+
+        <article class="timeline-entry featured-entry">
+          <div class="timeline-meta">
+            <time datetime="2026-03">2026.03</time>
+            <span aria-hidden="true">—</span>
+            <time datetime="2026-08">2026.08</time>
+          </div>
+          <div class="timeline-content">
+            <div class="entry-heading">
+              <div>
+                <h3>VLA 前沿算法实习生</h3>
+                <p>逐际动力科技有限公司 · Tron2 机器人</p>
               </div>
-              <span class="orbit-node orbit-node--observe">OBSERVE</span>
-              <span class="orbit-node orbit-node--reason">REASON</span>
-              <span class="orbit-node orbit-node--act">ACT</span>
-              <span class="orbit-node orbit-node--recover">RECOVER</span>
+              <span class="entry-type">实习</span>
             </div>
 
-            <div class="visual-footer">
-              <div><span>01</span><strong data-i18n="hero.visualSense">Sense</strong></div>
-              <div><span>02</span><strong data-i18n="hero.visualAdapt">Adapt</strong></div>
-              <div><span>03</span><strong data-i18n="hero.visualImprove">Improve</strong></div>
+            <ul class="detail-list">
+              <li>
+                围绕抽屉取物、拼积木、插 USB 等 10 项真实场景任务，将 Training-time RTC
+                迁移至 π0.5 进行微调，并接入基于策略 rollout、人工接管和成败轨迹的优势条件策略训练；
+                以 50-step horizon 估计 advantage、生成 ACP 条件标签并迭代更新策略。
+              </li>
+              <li>
+                开展 π0.7-inspired 预研：构建 Qwen VLM–π0.5 分层控制框架，上层完成长程任务分解与子任务切换，
+                下层联合子任务指令及 speed、quality、mistake metadata 生成 action chunk，面向桌面整理与衣物折叠错误恢复。
+              </li>
+              <li>
+                工作覆盖数据采集、模型训练、真机部署与 RL pipeline 搭建，并开展 π 系列、Cosmos 世界模型和 RTC
+                等方法的工程预研。
+              </li>
+            </ul>
+
+            <div class="result-note" aria-label="简历记录的阶段结果">
+              <strong>阶段结果</strong>
+              <span>覆盖 10 项真机任务；简历记录的最终成功率为 95%+</span>
             </div>
           </div>
+        </article>
+      </section>
+
+      <section class="section page-shell" id="project" aria-labelledby="project-title">
+        <div class="section-heading">
+          <p class="section-label">SELECTED PROJECT</p>
+          <h2 id="project-title">代表项目</h2>
+        </div>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <div>
+              <p class="project-context">自变量公司「具亮计划 2026」</p>
+              <h3>基于 WALL-OSS 架构的双臂端到端控制系统</h3>
+            </div>
+            <p class="project-date"><time datetime="2026-01">2026.01</time> — <time datetime="2026-03">2026.03</time></p>
+          </div>
+
+          <p class="project-summary">
+            面向长时序任务，完成 WALL-OSS 模型的工程部署，使双臂系统能够在复杂动态场景中进行闭环操作。
+          </p>
+
+          <div class="project-details">
+            <div>
+              <span class="detail-number">01</span>
+              <h4>数据系统</h4>
+              <p>搭建 Piper 双臂数据采集链路，接入 3 路相机与 14 维机器人本体状态，通过时间戳同步完成数据对齐。</p>
+            </div>
+            <div>
+              <span class="detail-number">02</span>
+              <h4>模型训练</h4>
+              <p>对 Qwen2.5-VL 进行全参微调，使用 FSDP、BF16、梯度累加及学习率 warmup；验证集损失收敛至 2×10<sup>−2</sup>。</p>
+            </div>
+            <div>
+              <span class="detail-number">03</span>
+              <h4>推理部署</h4>
+              <p>采用 32 步动作分块，并搭建基于 gRPC 的 Client–Server 异步通信管道，实现推理与执行解耦。</p>
+            </div>
+          </div>
+
+          <ul class="tag-list" aria-label="项目技术栈">
+            <li>WALL-OSS</li>
+            <li>Qwen2.5-VL</li>
+            <li>FSDP</li>
+            <li>BF16</li>
+            <li>gRPC</li>
+            <li>Piper</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section page-shell" id="competitions" aria-labelledby="competitions-title">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="section-label">COMPETITIONS</p>
+            <h2 id="competitions-title">机器人竞赛</h2>
+          </div>
+          <p class="section-intro">从嵌入式控制、定位融合到机器人视觉，持续参与完整系统的搭建与联调。</p>
+        </div>
+
+        <div class="competition-list">
+          <article class="competition-item">
+            <p class="competition-date">2022.08 — 2023.07</p>
+            <div>
+              <div class="competition-title">
+                <h3>第二十二届全国大学生机器人大赛 ROBOCON</h3>
+                <strong>全国季军</strong>
+              </div>
+              <p>
+                从 0 到 1 开发底盘全场定位，融合正交编码盘、SICK 激光测距仪和 BMI088 IMU，使用卡尔曼滤波完成状态估计；
+                同时以 ODrive 与 5065 电机实现速度、扭矩控制。
+              </p>
+            </div>
+          </article>
+
+          <article class="competition-item">
+            <p class="competition-date">2024.01 — 2024.04</p>
+            <div>
+              <div class="competition-title">
+                <h3>全国机器人大赛 ROBOMASTER</h3>
+                <strong>省一等奖（季军）</strong>
+              </div>
+              <p>
+                构建基于 YOLOv8 的高帧率装甲板识别与电控联调链路，覆盖数据集构建、模型训练、双向数据通信和云台姿态控制。
+              </p>
+            </div>
+          </article>
+
+          <article class="competition-item">
+            <p class="competition-date">2021.03 — 2021.07</p>
+            <div>
+              <div class="competition-title">
+                <h3>第二十届全国大学生机器人大赛 ROBOCON</h3>
+                <strong>全国二等奖</strong>
+              </div>
+              <p>
+                基于 STM32F407 与 FreeRTOS，使用 DBUS、CAN、PID 和 BMI088 完成底盘控制；结合激光测距、继电器与串口通信，
+                实现投射时序和板间协同。
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="focus section-shell section-block" id="focus" aria-labelledby="focus-title">
-        <div class="section-heading reveal">
-          <p class="section-index">01 / FOCUS</p>
-          <div>
-            <h2 id="focus-title" data-i18n="focus.title">The problems I care about.</h2>
-            <p data-i18n="focus.intro">
-              Robot intelligence is a system problem. I focus on the interfaces where models meet data,
-              control, and the physical world.
-            </p>
+      <section class="section page-shell education-skills" id="education" aria-labelledby="education-title">
+        <div>
+          <div class="section-heading compact-heading">
+            <p class="section-label">EDUCATION</p>
+            <h2 id="education-title">教育经历</h2>
           </div>
-        </div>
-
-        <div class="focus-grid">
-          <article class="focus-card reveal">
-            <div class="card-topline"><span>01</span><i aria-hidden="true"></i></div>
-            <h3 data-i18n="focus.vlaTitle">VLA post-training</h3>
-            <p data-i18n="focus.vlaBody">
-              Turning mixed-quality experience, language, and metadata into controllable behavior—not just a
-              better offline loss.
-            </p>
-            <ul class="tag-list" aria-label="Topics">
-              <li>Conditioning</li>
-              <li>Post-training</li>
-              <li>Generalization</li>
-            </ul>
-          </article>
-
-          <article class="focus-card reveal">
-            <div class="card-topline"><span>02</span><i aria-hidden="true"></i></div>
-            <h3 data-i18n="focus.robotTitle">Real-robot learning</h3>
-            <p data-i18n="focus.robotBody">
-              Designing deployment loops that collect failure, intervention, correction, and recovery as useful
-              supervision.
-            </p>
-            <ul class="tag-list" aria-label="Topics">
-              <li>Feedback loops</li>
-              <li>Recovery</li>
-              <li>Evaluation</li>
-            </ul>
-          </article>
-
-          <article class="focus-card reveal">
-            <div class="card-topline"><span>03</span><i aria-hidden="true"></i></div>
-            <h3 data-i18n="focus.controlTitle">Responsive control</h3>
-            <p data-i18n="focus.controlBody">
-              Co-designing action chunks, inference, and execution so intelligence remains useful under real
-              latency constraints.
-            </p>
-            <ul class="tag-list" aria-label="Topics">
-              <li>RTC</li>
-              <li>Action chunks</li>
-              <li>Latency</li>
-            </ul>
-          </article>
-
-          <article class="focus-card reveal">
-            <div class="card-topline"><span>04</span><i aria-hidden="true"></i></div>
-            <h3 data-i18n="focus.dataTitle">Dataset systems</h3>
-            <p data-i18n="focus.dataBody">
-              Building auditable data pipelines where prompts, labels, provenance, and model-facing transforms
-              stay aligned.
-            </p>
-            <ul class="tag-list" aria-label="Topics">
-              <li>Provenance</li>
-              <li>Schema</li>
-              <li>Reproducibility</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="system section-shell section-block" id="system" aria-labelledby="system-title">
-        <div class="section-heading reveal">
-          <p class="section-index">02 / SYSTEM</p>
-          <div>
-            <h2 id="system-title" data-i18n="system.title">A loop, not a one-shot training run.</h2>
-            <p data-i18n="system.intro">
-              The useful unit of progress is the full cycle from training to deployment and back to better data.
-            </p>
-          </div>
-        </div>
-
-        <div class="system-layout">
-          <ol class="loop-list reveal">
+          <ol class="education-list">
             <li>
-              <span class="loop-number">01</span>
               <div>
-                <h3 data-i18n="system.trainTitle">Train a strong prior</h3>
-                <p data-i18n="system.trainBody">Start with broad behavior coverage and explicit conditioning.</p>
+                <h3>深圳大学</h3>
+                <p>人工智能 · 硕士在读</p>
               </div>
-              <span class="loop-state">BASE</span>
+              <p><time datetime="2024-09">2024.09</time> — <time datetime="2027-06">2027.06</time></p>
             </li>
             <li>
-              <span class="loop-number">02</span>
               <div>
-                <h3 data-i18n="system.deployTitle">Deploy in the real system</h3>
-                <p data-i18n="system.deployBody">Measure task success, latency, instability, and edge cases.</p>
+                <h3>青岛理工大学</h3>
+                <p>计算机科学与技术 · 本科</p>
               </div>
-              <span class="loop-state">FIELD</span>
-            </li>
-            <li>
-              <span class="loop-number">03</span>
-              <div>
-                <h3 data-i18n="system.diagnoseTitle">Diagnose failure structure</h3>
-                <p data-i18n="system.diagnoseBody">Separate perception, intent, action, and control failures.</p>
-              </div>
-              <span class="loop-state">TRACE</span>
-            </li>
-            <li>
-              <span class="loop-number">04</span>
-              <div>
-                <h3 data-i18n="system.recoverTitle">Learn from correction</h3>
-                <p data-i18n="system.recoverBody">Turn intervention and recovery into the next training signal.</p>
-              </div>
-              <span class="loop-state">UPDATE</span>
+              <p><time datetime="2020-09">2020.09</time> — <time datetime="2024-06">2024.06</time></p>
             </li>
           </ol>
+        </div>
 
-          <aside class="principles-panel reveal" aria-labelledby="principles-title">
-            <p class="panel-kicker" data-i18n="system.panelKicker">OPERATING PRINCIPLES</p>
-            <h3 id="principles-title" data-i18n="system.panelTitle">
-              Deployment is not the end of training. It is where the missing curriculum appears.
-            </h3>
-            <div class="principle-list">
-              <div>
-                <span>A</span>
-                <p data-i18n="system.principleA">Evidence before claims.</p>
-              </div>
-              <div>
-                <span>B</span>
-                <p data-i18n="system.principleB">Recovery is a first-class capability.</p>
-              </div>
-              <div>
-                <span>C</span>
-                <p data-i18n="system.principleC">Latency is part of the policy.</p>
-              </div>
+        <div class="skills-column" aria-labelledby="skills-title">
+          <div class="section-heading compact-heading">
+            <p class="section-label">SKILLS</p>
+            <h2 id="skills-title">技术能力</h2>
+          </div>
+          <dl class="skills-list">
+            <div>
+              <dt>VLA / RL</dt>
+              <dd>π0.5、Training-time RTC、优势条件策略训练、WALL-OSS</dd>
             </div>
-          </aside>
+            <div>
+              <dt>训练 / 部署</dt>
+              <dd>Qwen2.5-VL、FSDP、BF16、gRPC、真机数据管线</dd>
+            </div>
+            <div>
+              <dt>控制 / 硬件</dt>
+              <dd>STM32、FreeRTOS、CAN、PID、卡尔曼滤波、ODrive</dd>
+            </div>
+            <div>
+              <dt>机器人视觉</dt>
+              <dd>YOLOv8、相机标定与数据集构建、视觉电控联调</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
-      <section class="now section-shell section-block" aria-labelledby="now-title">
-        <div class="now-card reveal">
+      <section class="section page-shell" id="media" aria-labelledby="media-title">
+        <div class="section-heading section-heading-row">
           <div>
-            <p class="section-index">03 / NOW</p>
-            <h2 id="now-title" data-i18n="now.title">Currently exploring</h2>
+            <p class="section-label">MEDIA</p>
+            <h2 id="media-title">项目影像与演示</h2>
           </div>
-          <div class="topic-cloud" aria-label="Current research topics">
-            <span data-i18n="now.topicOne">Metadata-conditioned policies</span>
-            <span data-i18n="now.topicTwo">Failure & recovery data</span>
-            <span data-i18n="now.topicThree">RTC & action chunking</span>
-            <span data-i18n="now.topicFour">Real-robot post-training</span>
-          </div>
+          <p class="section-intro">这里已为后续上传的真机照片、项目过程和演示视频预留位置。</p>
+        </div>
+
+        <div class="media-grid">
+          <!-- 上传图片后，用 picture/img 替换下面的 media-placeholder；具体示例见 README.md。 -->
+          <figure class="media-card">
+            <div class="media-placeholder media-placeholder-image" role="img" aria-label="项目图片待上传">
+              <span class="placeholder-icon" aria-hidden="true"></span>
+              <strong>PROJECT IMAGE</strong>
+              <small>即将更新</small>
+            </div>
+            <figcaption>
+              <h3>机器人项目图集</h3>
+              <p>用于展示真机实验、硬件系统、数据采集与现场调试。</p>
+            </figcaption>
+          </figure>
+
+          <!-- 上传视频后，用 video/source 替换下面的 media-placeholder；具体示例见 README.md。 -->
+          <figure class="media-card">
+            <div class="media-placeholder media-placeholder-video" role="img" aria-label="项目视频待上传">
+              <span class="play-icon" aria-hidden="true"></span>
+              <strong>DEMO VIDEO</strong>
+              <small>即将更新</small>
+            </div>
+            <figcaption>
+              <h3>VLA 真机演示</h3>
+              <p>用于展示任务执行、长程控制、人工接管与失败恢复。</p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="connect section-shell section-block" id="connect" aria-labelledby="connect-title">
-        <div class="connect-card reveal">
-          <img
-            src="https://avatars.githubusercontent.com/u/285504590?v=4"
-            width="112"
-            height="112"
-            alt="Ruyi-LimX profile avatar"
-            decoding="async"
-          />
-          <div class="connect-copy">
-            <p class="section-index">04 / CONNECT</p>
-            <h2 id="connect-title" data-i18n="connect.title">Follow the work as it becomes public.</h2>
-            <p data-i18n="connect.body">
-              GitHub is the canonical place for future code, experiments, and technical notes.
-            </p>
-          </div>
-          <a
-            class="round-link"
-            href="https://github.com/Ruyi-LimX"
-            target="_blank"
-            rel="me noopener noreferrer"
-            aria-label="Open Ruyi-LimX on GitHub"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"></path></svg>
+      <section class="contact page-shell" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="section-label">CONTACT</p>
+          <h2 id="contact-title">保持联系</h2>
+          <p>欢迎交流 VLA 后训练、真实机器人学习与机器人系统工程。</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:2410815008@mails.szu.edu.cn">
+            <span>邮箱</span>
+            <strong>2410815008@mails.szu.edu.cn</strong>
+          </a>
+          <a href="https://github.com/Ruyi-LimX" target="_blank" rel="me noopener noreferrer">
+            <span>GitHub</span>
+            <strong>Ruyi-LimX <i aria-hidden="true">↗</i></strong>
           </a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer section-shell">
-      <p>© <span data-year></span> Ruyi-LimX</p>
-      <p data-i18n="footer.note">Built with semantic HTML, CSS, and a little JavaScript. No trackers.</p>
-      <a href="#top" data-i18n="footer.back">Back to top ↑</a>
+    <footer class="site-footer">
+      <div class="page-shell">
+        <p>© <span data-year>2026</span> 龚志路</p>
+        <p>Built with semantic HTML and CSS · No trackers</p>
+        <a href="#top">返回顶部 ↑</a>
+      </div>
     </footer>
 
-    <script src="script.js?v=1" defer></script>
+    <script src="script.js?v=2"></script>
   </body>
 </html>
