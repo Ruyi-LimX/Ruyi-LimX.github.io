@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ruyi-LimX explores vision-language-action systems, real-robot learning, and responsive control."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b0e13" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ruyi-limx.github.io/" />
+    <meta property="og:title" content="Ruyi-LimX — Robotics, VLA & Embodied AI" />
+    <meta
+      property="og:description"
+      content="Building robot learning systems that connect data, post-training, deployment, and recovery."
+    />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/285504590?v=4" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="canonical" href="https://ruyi-limx.github.io/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ruyi-LimX — Robotics, VLA & Embodied AI</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Ruyi-LimX",
+          "alternateName": "Ruyi-LimX",
+          "url": "https://ruyi-limx.github.io/",
+          "image": "https://avatars.githubusercontent.com/u/285504590?v=4",
+          "sameAs": ["https://github.com/Ruyi-LimX"],
+          "knowsAbout": [
+            "Robotics",
+            "Vision-Language-Action Models",
+            "Embodied AI",
+            "Real-Robot Learning",
+            "Responsive Control"
+          ]
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Ruyi-LimX home">
+        <span class="brand-mark" aria-hidden="true">R/</span>
+        <span class="brand-name">Ruyi-LimX</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#focus" data-i18n="nav.focus">Focus</a>
+        <a href="#system" data-i18n="nav.system">System</a>
+        <a href="#connect" data-i18n="nav.connect">Connect</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="utility-button language-toggle" type="button" data-language-toggle aria-label="切换为中文">
+          <span data-language-label>中文</span>
+        </button>
+        <button class="utility-button theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme">
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+          </svg>
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5 8.5 8.5 0 1 0 20.5 14.3Z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <div class="eyebrow-row">
+            <span class="signal-dot" aria-hidden="true"></span>
+            <p class="eyebrow" data-i18n="hero.eyebrow">ROBOT LEARNING / FIELD NOTES</p>
+          </div>
+
+          <h1 id="hero-title">
+            <span data-i18n="hero.titleLead">Building robots that</span>
+            <span class="accent-text" data-i18n="hero.titleAccent">learn from reality.</span>
+          </h1>
+
+          <p class="hero-lede" data-i18n="hero.lede">
+            I explore vision-language-action systems, real-robot learning, and responsive control—connecting
+            data, post-training, deployment, and recovery.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button--primary" href="#focus">
+              <span data-i18n="hero.primaryCta">Explore the focus</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="m7 4 6 6-6 6"></path>
+              </svg>
+            </a>
+            <a
+              class="button button--ghost"
+              href="https://github.com/Ruyi-LimX"
+              target="_blank"
+              rel="me noopener noreferrer"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+
+          <div class="hero-sequence" aria-label="Data to feedback loop">
+            <span data-i18n="hero.sequenceData">DATA</span>
+            <i aria-hidden="true"></i>
+            <span data-i18n="hero.sequencePolicy">POLICY</span>
+            <i aria-hidden="true"></i>
+            <span data-i18n="hero.sequenceAction">ACTION</span>
+            <i aria-hidden="true"></i>
+            <span data-i18n="hero.sequenceFeedback">FEEDBACK</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Closed-loop robot learning diagram">
+          <div class="visual-frame">
+            <div class="visual-header">
+              <span class="visual-label">CLOSED_LOOP.SYS</span>
+              <span class="live-state"><i aria-hidden="true"></i><span data-i18n="hero.live">LIVE</span></span>
+            </div>
+
+            <div class="orbit-stage" aria-hidden="true">
+              <div class="grid-plane"></div>
+              <div class="orbit orbit--outer"><span class="orbit-pulse"></span></div>
+              <div class="orbit orbit--middle"></div>
+              <div class="orbit orbit--inner"></div>
+              <div class="core-node">
+                <span class="core-kicker">VLA</span>
+                <strong>π</strong>
+                <span class="core-status">ADAPTIVE</span>
+              </div>
+              <span class="orbit-node orbit-node--observe">OBSERVE</span>
+              <span class="orbit-node orbit-node--reason">REASON</span>
+              <span class="orbit-node orbit-node--act">ACT</span>
+              <span class="orbit-node orbit-node--recover">RECOVER</span>
+            </div>
+
+            <div class="visual-footer">
+              <div><span>01</span><strong data-i18n="hero.visualSense">Sense</strong></div>
+              <div><span>02</span><strong data-i18n="hero.visualAdapt">Adapt</strong></div>
+              <div><span>03</span><strong data-i18n="hero.visualImprove">Improve</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus section-shell section-block" id="focus" aria-labelledby="focus-title">
+        <div class="section-heading reveal">
+          <p class="section-index">01 / FOCUS</p>
+          <div>
+            <h2 id="focus-title" data-i18n="focus.title">The problems I care about.</h2>
+            <p data-i18n="focus.intro">
+              Robot intelligence is a system problem. I focus on the interfaces where models meet data,
+              control, and the physical world.
+            </p>
+          </div>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card reveal">
+            <div class="card-topline"><span>01</span><i aria-hidden="true"></i></div>
+            <h3 data-i18n="focus.vlaTitle">VLA post-training</h3>
+            <p data-i18n="focus.vlaBody">
+              Turning mixed-quality experience, language, and metadata into controllable behavior—not just a
+              better offline loss.
+            </p>
+            <ul class="tag-list" aria-label="Topics">
+              <li>Conditioning</li>
+              <li>Post-training</li>
+              <li>Generalization</li>
+            </ul>
+          </article>
+
+          <article class="focus-card reveal">
+            <div class="card-topline"><span>02</span><i aria-hidden="true"></i></div>
+            <h3 data-i18n="focus.robotTitle">Real-robot learning</h3>
+            <p data-i18n="focus.robotBody">
+              Designing deployment loops that collect failure, intervention, correction, and recovery as useful
+              supervision.
+            </p>
+            <ul class="tag-list" aria-label="Topics">
+              <li>Feedback loops</li>
+              <li>Recovery</li>
+              <li>Evaluation</li>
+            </ul>
+          </article>
+
+          <article class="focus-card reveal">
+            <div class="card-topline"><span>03</span><i aria-hidden="true"></i></div>
+            <h3 data-i18n="focus.controlTitle">Responsive control</h3>
+            <p data-i18n="focus.controlBody">
+              Co-designing action chunks, inference, and execution so intelligence remains useful under real
+              latency constraints.
+            </p>
+            <ul class="tag-list" aria-label="Topics">
+              <li>RTC</li>
+              <li>Action chunks</li>
+              <li>Latency</li>
+            </ul>
+          </article>
+
+          <article class="focus-card reveal">
+            <div class="card-topline"><span>04</span><i aria-hidden="true"></i></div>
+            <h3 data-i18n="focus.dataTitle">Dataset systems</h3>
+            <p data-i18n="focus.dataBody">
+              Building auditable data pipelines where prompts, labels, provenance, and model-facing transforms
+              stay aligned.
+            </p>
+            <ul class="tag-list" aria-label="Topics">
+              <li>Provenance</li>
+              <li>Schema</li>
+              <li>Reproducibility</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="system section-shell section-block" id="system" aria-labelledby="system-title">
+        <div class="section-heading reveal">
+          <p class="section-index">02 / SYSTEM</p>
+          <div>
+            <h2 id="system-title" data-i18n="system.title">A loop, not a one-shot training run.</h2>
+            <p data-i18n="system.intro">
+              The useful unit of progress is the full cycle from training to deployment and back to better data.
+            </p>
+          </div>
+        </div>
+
+        <div class="system-layout">
+          <ol class="loop-list reveal">
+            <li>
+              <span class="loop-number">01</span>
+              <div>
+                <h3 data-i18n="system.trainTitle">Train a strong prior</h3>
+                <p data-i18n="system.trainBody">Start with broad behavior coverage and explicit conditioning.</p>
+              </div>
+              <span class="loop-state">BASE</span>
+            </li>
+            <li>
+              <span class="loop-number">02</span>
+              <div>
+                <h3 data-i18n="system.deployTitle">Deploy in the real system</h3>
+                <p data-i18n="system.deployBody">Measure task success, latency, instability, and edge cases.</p>
+              </div>
+              <span class="loop-state">FIELD</span>
+            </li>
+            <li>
+              <span class="loop-number">03</span>
+              <div>
+                <h3 data-i18n="system.diagnoseTitle">Diagnose failure structure</h3>
+                <p data-i18n="system.diagnoseBody">Separate perception, intent, action, and control failures.</p>
+              </div>
+              <span class="loop-state">TRACE</span>
+            </li>
+            <li>
+              <span class="loop-number">04</span>
+              <div>
+                <h3 data-i18n="system.recoverTitle">Learn from correction</h3>
+                <p data-i18n="system.recoverBody">Turn intervention and recovery into the next training signal.</p>
+              </div>
+              <span class="loop-state">UPDATE</span>
+            </li>
+          </ol>
+
+          <aside class="principles-panel reveal" aria-labelledby="principles-title">
+            <p class="panel-kicker" data-i18n="system.panelKicker">OPERATING PRINCIPLES</p>
+            <h3 id="principles-title" data-i18n="system.panelTitle">
+              Deployment is not the end of training. It is where the missing curriculum appears.
+            </h3>
+            <div class="principle-list">
+              <div>
+                <span>A</span>
+                <p data-i18n="system.principleA">Evidence before claims.</p>
+              </div>
+              <div>
+                <span>B</span>
+                <p data-i18n="system.principleB">Recovery is a first-class capability.</p>
+              </div>
+              <div>
+                <span>C</span>
+                <p data-i18n="system.principleC">Latency is part of the policy.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="now section-shell section-block" aria-labelledby="now-title">
+        <div class="now-card reveal">
+          <div>
+            <p class="section-index">03 / NOW</p>
+            <h2 id="now-title" data-i18n="now.title">Currently exploring</h2>
+          </div>
+          <div class="topic-cloud" aria-label="Current research topics">
+            <span data-i18n="now.topicOne">Metadata-conditioned policies</span>
+            <span data-i18n="now.topicTwo">Failure & recovery data</span>
+            <span data-i18n="now.topicThree">RTC & action chunking</span>
+            <span data-i18n="now.topicFour">Real-robot post-training</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="connect section-shell section-block" id="connect" aria-labelledby="connect-title">
+        <div class="connect-card reveal">
+          <img
+            src="https://avatars.githubusercontent.com/u/285504590?v=4"
+            width="112"
+            height="112"
+            alt="Ruyi-LimX profile avatar"
+            decoding="async"
+          />
+          <div class="connect-copy">
+            <p class="section-index">04 / CONNECT</p>
+            <h2 id="connect-title" data-i18n="connect.title">Follow the work as it becomes public.</h2>
+            <p data-i18n="connect.body">
+              GitHub is the canonical place for future code, experiments, and technical notes.
+            </p>
+          </div>
+          <a
+            class="round-link"
+            href="https://github.com/Ruyi-LimX"
+            target="_blank"
+            rel="me noopener noreferrer"
+            aria-label="Open Ruyi-LimX on GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"></path></svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <p>© <span data-year></span> Ruyi-LimX</p>
+      <p data-i18n="footer.note">Built with semantic HTML, CSS, and a little JavaScript. No trackers.</p>
+      <a href="#top" data-i18n="footer.back">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

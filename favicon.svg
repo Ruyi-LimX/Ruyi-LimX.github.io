@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ruyi-LimX mark">
+  <rect width="64" height="64" rx="17" fill="#0b0e13"/>
+  <path d="M17 45V18h12.2c7 0 11.3 3.6 11.3 9.5 0 4.1-2.1 7.1-5.8 8.5L42 45h-7.1l-6.3-8.1h-5.5V45H17Zm6.1-13.2h5.5c3.7 0 5.7-1.5 5.7-4.2s-2-4.1-5.7-4.1h-5.5v8.3Z" fill="#c8ff63"/>
+  <path d="m46 17-5 30" stroke="#72e2d2" stroke-width="4" stroke-linecap="round"/>
+</svg>
