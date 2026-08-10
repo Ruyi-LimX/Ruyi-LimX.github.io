@@ -231,15 +231,6 @@ dd {
   transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
 }
 
-.button-primary {
-  background: var(--accent);
-  color: #ffffff;
-}
-
-.button-primary:hover {
-  background: var(--accent-dark);
-}
-
 .button-secondary {
   border-color: var(--line-strong);
   background: #ffffff;
