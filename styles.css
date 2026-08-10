@@ -1204,6 +1204,12 @@ p {
   transform: translateY(0);
 }
 
+.js .hero .reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
 @keyframes ping {
   0% {
     opacity: 0.8;

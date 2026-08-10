@@ -194,6 +194,9 @@ window.addEventListener("scroll", updateHeader, { passive: true });
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const revealElements = document.querySelectorAll(".reveal");
 
+// Keep the first screen readable even when background tabs throttle observers.
+document.querySelectorAll(".hero .reveal").forEach((element) => element.classList.add("is-visible"));
+
 if (reduceMotion || !("IntersectionObserver" in window)) {
   revealElements.forEach((element) => element.classList.add("is-visible"));
 } else {
