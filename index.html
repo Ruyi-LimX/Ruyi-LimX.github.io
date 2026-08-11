@@ -21,7 +21,7 @@
 
     <link rel="canonical" href="https://ruyi-limx.github.io/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=7" />
+    <link rel="stylesheet" href="styles.css?v=8" />
     <title>龚志路｜机器人学习与 VLA</title>
 
     <script type="application/ld+json">
@@ -136,24 +136,21 @@
 
             <ul class="detail-list">
               <li>
-                围绕抽屉取物、拼积木、插 USB 等 10 项真实场景任务，将 Training-time RTC
-                迁移至 π0.5 进行微调，并接入基于策略 rollout、人工接管和成败轨迹的优势条件策略训练；
-                以 50-step horizon 估计 advantage、生成 ACP 条件标签并迭代更新策略。
+                基于公司自研Tron2机器人，负责VLA强化学习后训练全流程，同时又有自己的预研项目(Pi 0.7)
               </li>
               <li>
-                开展 π0.7-inspired 预研：构建 Qwen VLM–π0.5 分层控制框架，上层完成长程任务分解与子任务切换，
-                下层联合子任务指令及 speed、quality、mistake metadata 生成 action chunk，面向桌面整理与衣物折叠错误恢复。
+                <strong>VLA+RL：</strong>对真实场景下10个具体任务（抽屉取物、拼积木、插USB等），使用Pi0.5 Training RTC进行fine tune。为提升精细精度，进一步接入 Evo-RL强化学习训练，基于策略 rollout、人工接管和成功/失败轨迹训练价值函数，以 50-step horizon 估计 advantage、生成 ACP 条件标签并迭代更新策略。最终成功率95%+、精准度±5mm。
               </li>
               <li>
-                工作覆盖数据采集、模型训练、真机部署与 RL pipeline 搭建，并开展 π 系列、Cosmos 世界模型和 RTC
-                等方法的工程预研。
+                <strong>PI0.7(预研)：</strong>构建 Qwen VLM–Pi0.5 分层机器人控制框架。上层 Qwen High-Level Policy 根据任务指令与视觉观测进行长程任务分解和子任务切换，下层 Pi0.5 Flow-Matching Policy 联合子任务指令及 speed、quality、mistake metadata 为条件生成 action chunk。实现了桌面物体自主整理、错误恢复的衣物折叠等一系列复杂任务
+              </li>
+              <li>
+                <strong>承担角色：</strong>从数据采集、模型训练、真机部署、RL pipeline、前沿论文的复现（Pi、世界模型Cosmos、RTC）整个完整链路的搭建。拥有极强的发现问题、解决问题、追踪前沿的能力。
+              </li>
+              <li>
+                <strong>已做机器人PPT视频介绍，详见PPT展示</strong>
               </li>
             </ul>
-
-            <div class="result-note" aria-label="简历记录的阶段结果">
-              <strong>阶段结果</strong>
-              <span>覆盖 10 项真机任务；简历记录的最终成功率为 95%+</span>
-            </div>
           </div>
         </article>
       </section>

@@ -348,6 +348,8 @@ dd {
 .entry-company {
   flex: 0 0 auto;
   margin-left: auto;
+  font-size: 18px;
+  font-weight: 600;
   text-align: right;
 }
 
@@ -361,26 +363,6 @@ dd {
 
 .detail-list li::marker {
   color: var(--accent);
-}
-
-.result-note {
-  display: flex;
-  align-items: baseline;
-  margin-top: 28px;
-  padding: 15px 18px;
-  border-left: 3px solid var(--accent);
-  background: var(--surface);
-  gap: 16px;
-  font-size: 14px;
-}
-
-.result-note strong {
-  flex: 0 0 auto;
-  color: var(--accent-dark);
-}
-
-.result-note span {
-  color: var(--text-soft);
 }
 
 .project-card {
@@ -919,12 +901,6 @@ dd {
 
   .project-date {
     margin-top: 0;
-  }
-
-  .result-note {
-    align-items: start;
-    flex-direction: column;
-    gap: 3px;
   }
 
   .competition-item {
