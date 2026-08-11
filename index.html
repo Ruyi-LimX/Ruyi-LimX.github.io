@@ -21,7 +21,7 @@
 
     <link rel="canonical" href="https://ruyi-limx.github.io/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=8" />
+    <link rel="stylesheet" href="styles.css?v=9" />
     <title>龚志路｜机器人学习与 VLA</title>
 
     <script type="application/ld+json">
@@ -104,7 +104,7 @@
             <span class="highlight-kicker">02 · 自变量项目</span>
             <h2>双臂端到端控制</h2>
             <p>完成 WALL-OSS 从数据采集、全参微调到 gRPC 异步部署</p>
-            <span class="highlight-link">查看代表项目 <i aria-hidden="true">↓</i></span>
+            <span class="highlight-link">查看项目经历 <i aria-hidden="true">↓</i></span>
           </a>
 
           <a class="highlight-card" href="#competitions">
@@ -158,48 +158,50 @@
       <section class="section page-shell" id="project" aria-labelledby="project-title">
         <div class="section-heading">
           <p class="section-label">SELECTED PROJECT</p>
-          <h2 id="project-title">代表项目</h2>
+          <h2 id="project-title">项目经历</h2>
         </div>
 
         <article class="project-card">
-          <div class="project-topline">
-            <div>
-              <p class="project-context">自变量公司「具亮计划 2026」</p>
-              <h3>基于 WALL-OSS 架构的双臂端到端控制系统</h3>
-            </div>
+          <div class="project-entry">
             <p class="project-date"><time datetime="2026-01">2026.01</time> — <time datetime="2026-03">2026.03</time></p>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>基于Piper机械臂的WALL-OSS部署</h3>
+                <p class="project-context">自变量公司「具亮计划 2026」</p>
+              </div>
+
+              <p class="project-summary">
+                面向长时序任务，完成 WALL-OSS 模型的工程部署，使双臂系统能够在复杂动态场景中进行闭环操作。
+              </p>
+
+              <div class="project-details">
+                <div>
+                  <span class="detail-number">01</span>
+                  <h4>数据系统</h4>
+                  <p>搭建 Piper 双臂数据采集链路，接入 3 路相机与 14 维机器人本体状态，通过时间戳同步完成数据对齐。</p>
+                </div>
+                <div>
+                  <span class="detail-number">02</span>
+                  <h4>模型训练</h4>
+                  <p>对 Qwen2.5-VL 进行全参微调，使用 FSDP、BF16、梯度累加及学习率 warmup；验证集损失收敛至 2×10<sup>−2</sup>。</p>
+                </div>
+                <div>
+                  <span class="detail-number">03</span>
+                  <h4>推理部署</h4>
+                  <p>采用 32 步动作分块，并搭建基于 gRPC 的 Client–Server 异步通信管道，实现推理与执行解耦。</p>
+                </div>
+              </div>
+
+              <ul class="tag-list" aria-label="项目技术栈">
+                <li>WALL-OSS</li>
+                <li>Qwen2.5-VL</li>
+                <li>FSDP</li>
+                <li>BF16</li>
+                <li>gRPC</li>
+                <li>Piper</li>
+              </ul>
+            </div>
           </div>
-
-          <p class="project-summary">
-            面向长时序任务，完成 WALL-OSS 模型的工程部署，使双臂系统能够在复杂动态场景中进行闭环操作。
-          </p>
-
-          <div class="project-details">
-            <div>
-              <span class="detail-number">01</span>
-              <h4>数据系统</h4>
-              <p>搭建 Piper 双臂数据采集链路，接入 3 路相机与 14 维机器人本体状态，通过时间戳同步完成数据对齐。</p>
-            </div>
-            <div>
-              <span class="detail-number">02</span>
-              <h4>模型训练</h4>
-              <p>对 Qwen2.5-VL 进行全参微调，使用 FSDP、BF16、梯度累加及学习率 warmup；验证集损失收敛至 2×10<sup>−2</sup>。</p>
-            </div>
-            <div>
-              <span class="detail-number">03</span>
-              <h4>推理部署</h4>
-              <p>采用 32 步动作分块，并搭建基于 gRPC 的 Client–Server 异步通信管道，实现推理与执行解耦。</p>
-            </div>
-          </div>
-
-          <ul class="tag-list" aria-label="项目技术栈">
-            <li>WALL-OSS</li>
-            <li>Qwen2.5-VL</li>
-            <li>FSDP</li>
-            <li>BF16</li>
-            <li>gRPC</li>
-            <li>Piper</li>
-          </ul>
         </article>
       </section>
 
