@@ -55,6 +55,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 dl,
 dd,
@@ -65,7 +66,8 @@ figure {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   line-height: 1.28;
   text-wrap: balance;
 }
@@ -457,23 +459,31 @@ dd {
   font-size: 0.7em;
 }
 
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 28px 0 0;
-  padding: 0;
-  gap: 8px;
-  list-style: none;
+.project-media {
+  margin-top: 34px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
 }
 
-.tag-list li {
-  padding: 5px 10px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--surface);
-  color: var(--text-soft);
-  font-family: var(--font-mono);
-  font-size: 11px;
+.project-media-heading {
+  margin-bottom: 18px;
+}
+
+.project-media-heading .section-label {
+  margin-bottom: 6px;
+}
+
+.project-media-heading h4 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.project-media .media-grid {
+  gap: 18px;
+}
+
+.project-media .media-card video {
+  object-fit: contain;
 }
 
 .competition-list {
@@ -543,29 +553,26 @@ dd {
   font-size: clamp(30px, 3.6vw, 40px);
 }
 
-.skills-list {
-  margin-bottom: 0;
-  border-top: 1px solid var(--line-strong);
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 20px 0;
+  border-block: 1px solid var(--line-strong);
+  list-style: none;
 }
 
-.skills-list > div {
-  display: grid;
-  grid-template-columns: 112px 1fr;
-  padding-block: 18px;
-  border-bottom: 1px solid var(--line);
-  gap: 20px;
-}
-
-.skills-list dt {
+.stack-list li {
   color: var(--text);
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
-.skills-list dd {
-  margin-bottom: 0;
-  color: var(--text-soft);
-  font-size: 14px;
+.stack-list li:not(:last-child)::after {
+  margin-inline: 16px;
+  color: var(--line-strong);
+  content: "/";
 }
 
 .media-grid {
@@ -658,7 +665,8 @@ dd {
   padding: 22px 24px 24px;
 }
 
-.media-card h3 {
+.media-card h3,
+.media-card h5 {
   margin-bottom: 6px;
   font-size: 18px;
 }
@@ -957,11 +965,6 @@ dd {
   .project-card {
     margin-inline: -4px;
     padding: 24px 20px;
-  }
-
-  .skills-list > div {
-    grid-template-columns: 1fr;
-    gap: 4px;
   }
 
   .site-footer .page-shell {

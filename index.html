@@ -21,7 +21,7 @@
 
     <link rel="canonical" href="https://ruyi-limx.github.io/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=10" />
+    <link rel="stylesheet" href="styles.css?v=11" />
     <title>龚志路｜机器人学习与 VLA</title>
 
     <script type="application/ld+json">
@@ -192,14 +192,82 @@
                 </div>
               </div>
 
-              <ul class="tag-list" aria-label="项目技术栈">
-                <li>WALL-OSS</li>
-                <li>Qwen2.5-VL</li>
-                <li>FSDP</li>
-                <li>BF16</li>
-                <li>gRPC</li>
-                <li>Piper</li>
-              </ul>
+              <div class="project-media" aria-labelledby="project-media-title">
+                <div class="project-media-heading">
+                  <p class="section-label">PROJECT DEMOS</p>
+                  <h4 id="project-media-title">真机演示</h4>
+                </div>
+
+                <div class="media-grid">
+                  <figure class="media-card">
+                    <video
+                      controls
+                      preload="metadata"
+                      playsinline
+                      poster="assets/videos/wall-oss-fruit-sorting.jpg"
+                      aria-label="WALL-OSS 果蔬分拣演示"
+                    >
+                      <source src="assets/videos/wall-oss-fruit-sorting.mp4" type="video/mp4" />
+                      你的浏览器不支持视频播放。
+                    </video>
+                    <figcaption>
+                      <h5>果蔬分拣</h5>
+                      <p>双臂协同完成桌面果蔬抓取与分类放置。</p>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="media-card">
+                    <video
+                      controls
+                      preload="metadata"
+                      playsinline
+                      poster="assets/videos/wall-oss-letter-blocks.jpg"
+                      aria-label="WALL-OSS 字母积木拼词演示"
+                    >
+                      <source src="assets/videos/wall-oss-letter-blocks.mp4" type="video/mp4" />
+                      你的浏览器不支持视频播放。
+                    </video>
+                    <figcaption>
+                      <h5>字母积木拼词</h5>
+                      <p>双臂依次抓取目标字母积木，并在木板上拼出「CUP」。</p>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="media-card">
+                    <video
+                      controls
+                      preload="metadata"
+                      playsinline
+                      poster="assets/videos/wall-oss-cable-insertion.jpg"
+                      aria-label="WALL-OSS 数据线插接演示"
+                    >
+                      <source src="assets/videos/wall-oss-cable-insertion.mp4" type="video/mp4" />
+                      你的浏览器不支持视频播放。
+                    </video>
+                    <figcaption>
+                      <h5>数据线插接</h5>
+                      <p>双臂协同操作数据线，完成插头对准与插接。</p>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="media-card">
+                    <video
+                      controls
+                      preload="metadata"
+                      playsinline
+                      poster="assets/videos/wall-oss-ring-stacking.jpg"
+                      aria-label="WALL-OSS 圆环套柱演示"
+                    >
+                      <source src="assets/videos/wall-oss-ring-stacking.mp4" type="video/mp4" />
+                      你的浏览器不支持视频播放。
+                    </video>
+                    <figcaption>
+                      <h5>圆环套柱</h5>
+                      <p>双臂抓取圆环并完成对准与套柱操作。</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -260,26 +328,15 @@
         <div class="skills-column" aria-labelledby="skills-title">
           <div class="section-heading compact-heading">
             <p class="section-label">SKILLS</p>
-            <h2 id="skills-title">技术能力</h2>
+            <h2 id="skills-title">技术栈</h2>
           </div>
-          <dl class="skills-list">
-            <div>
-              <dt>VLA / RL</dt>
-              <dd>π0.5、Training-time RTC、优势条件策略训练、WALL-OSS</dd>
-            </div>
-            <div>
-              <dt>训练 / 部署</dt>
-              <dd>Qwen2.5-VL、FSDP、BF16、gRPC、真机数据管线</dd>
-            </div>
-            <div>
-              <dt>控制 / 硬件</dt>
-              <dd>STM32、FreeRTOS、CAN、PID、卡尔曼滤波、ODrive</dd>
-            </div>
-            <div>
-              <dt>机器人视觉</dt>
-              <dd>YOLOv8、相机标定与数据集构建、视觉电控联调</dd>
-            </div>
-          </dl>
+          <ul class="stack-list" aria-label="技术栈关键词">
+            <li>VLA</li>
+            <li>RL</li>
+            <li>训练 / 部署</li>
+            <li>嵌入式</li>
+            <li>PCB</li>
+          </ul>
         </div>
       </section>
 
