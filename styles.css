@@ -322,7 +322,7 @@ dd {
   gap: 7px;
   color: var(--text-faint);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .entry-heading {
@@ -421,7 +421,7 @@ dd {
   margin: 5px 0 0;
   color: var(--text-faint);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .project-summary {
@@ -505,7 +505,7 @@ dd {
   margin: 5px 0 0;
   color: var(--text-faint);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .competition-title {
