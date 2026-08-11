@@ -327,17 +327,11 @@ dd {
 
 .entry-heading {
   display: flex;
-  align-items: start;
-  justify-content: space-between;
-  margin-bottom: 26px;
-  gap: 24px;
-}
-
-.entry-title-line {
-  display: flex;
   align-items: baseline;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 8px 18px;
+  margin-bottom: 26px;
+  gap: 10px 24px;
 }
 
 .entry-heading h3 {
@@ -351,15 +345,10 @@ dd {
   color: var(--text-soft);
 }
 
-.entry-type {
+.entry-company {
   flex: 0 0 auto;
-  padding: 4px 9px;
-  border: 1px solid #bed8c9;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent-dark);
-  font-size: 12px;
-  font-weight: 700;
+  margin-left: auto;
+  text-align: right;
 }
 
 .detail-list {
