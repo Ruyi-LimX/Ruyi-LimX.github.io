@@ -21,7 +21,7 @@
 
     <link rel="canonical" href="https://ruyi-limx.github.io/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=9" />
+    <link rel="stylesheet" href="styles.css?v=10" />
     <title>龚志路｜机器人学习与 VLA</title>
 
     <script type="application/ld+json">
@@ -206,53 +206,51 @@
       </section>
 
       <section class="section page-shell" id="competitions" aria-labelledby="competitions-title">
-        <div class="section-heading section-heading-row">
-          <div>
-            <p class="section-label">COMPETITIONS</p>
-            <h2 id="competitions-title">机器人竞赛</h2>
-          </div>
-          <p class="section-intro">从嵌入式控制、定位融合到机器人视觉，持续参与完整系统的搭建与联调。</p>
+        <div class="section-heading">
+          <p class="section-label">COMPETITIONS</p>
+          <h2 id="competitions-title">比赛经历（举例介绍）</h2>
         </div>
 
         <div class="competition-list">
           <article class="competition-item">
-            <p class="competition-date">2022.08 — 2023.07</p>
-            <div>
+            <p class="competition-date">2022.08 - 2023.07</p>
+            <div class="competition-content">
               <div class="competition-title">
                 <h3>第二十二届全国大学生机器人大赛 ROBOCON</h3>
                 <strong>全国季军</strong>
               </div>
-              <p>
-                从 0 到 1 开发底盘全场定位，融合正交编码盘、SICK 激光测距仪和 BMI088 IMU，使用卡尔曼滤波完成状态估计；
-                同时以 ODrive 与 5065 电机实现速度、扭矩控制。
-              </p>
-            </div>
-          </article>
-
-          <article class="competition-item">
-            <p class="competition-date">2024.01 — 2024.04</p>
-            <div>
-              <div class="competition-title">
-                <h3>全国机器人大赛 ROBOMASTER</h3>
-                <strong>省一等奖（季军）</strong>
+              <div class="competition-details">
+                <p><strong>底盘定位：</strong>为队伍从0到1开发了底盘全场定位技术。融合正交编码盘、SICK激光测距仪和 BMI088 IMU 数据，并采用卡尔曼滤波完成状态估计。最终实现机器人精准定位(精度±5mm)</p>
+                <p><strong>电机控制：</strong>使用odrive+5065电机，实现高功率电机速度、扭矩等模式的精确控制。</p>
               </div>
-              <p>
-                构建基于 YOLOv8 的高帧率装甲板识别与电控联调链路，覆盖数据集构建、模型训练、双向数据通信和云台姿态控制。
-              </p>
             </div>
           </article>
 
           <article class="competition-item">
-            <p class="competition-date">2021.03 — 2021.07</p>
-            <div>
+            <p class="competition-date">2024.01 - 2024.04</p>
+            <div class="competition-content">
+              <div class="competition-title">
+                <h3>全国机器人大赛ROBOMASTER</h3>
+                <strong>省一等奖(季军)</strong>
+              </div>
+              <div class="competition-details">
+                <p>针对高帧率识别敌方装甲板的需求，构建了基于yolov8的视觉识别与电控联调的全流程链路。包括数据集构建、模型训练、双向数据通信、云台姿态控制。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="competition-item">
+            <p class="competition-date">2021.03 - 2021.07</p>
+            <div class="competition-content">
               <div class="competition-title">
                 <h3>第二十届全国大学生机器人大赛 ROBOCON</h3>
                 <strong>全国二等奖</strong>
               </div>
-              <p>
-                基于 STM32F407 与 FreeRTOS，使用 DBUS、CAN、PID 和 BMI088 完成底盘控制；结合激光测距、继电器与串口通信，
-                实现投射时序和板间协同。
-              </p>
+              <div class="competition-details">
+                <p><strong>底盘控制：</strong>基于STM32F407FreeRTOS，采用DBUS、CAN通信与PID(速度环与位置环)驱动无刷电机实现底盘快速响应；融合BMI088陀螺仪数据，确保高速运动下的姿态平稳。</p>
+                <p><strong>精准投射：</strong>引入激光测距数据修正发射仰角，通过电磁继电器精确控制取放箭时序。</p>
+                <p><strong>系统集成：</strong>通过串口通信实现板间数据同步，确保底盘移动与上层动作的毫秒级配合。</p>
+              </div>
             </div>
           </article>
         </div>

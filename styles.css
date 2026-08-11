@@ -515,11 +515,20 @@ dd {
   font-size: 14px;
 }
 
-.competition-item > div > p {
+.competition-details {
+  display: grid;
   max-width: 760px;
+  gap: 8px;
+}
+
+.competition-details p {
   margin-bottom: 0;
   color: var(--text-soft);
   font-size: 15px;
+}
+
+.competition-details strong {
+  color: var(--text);
 }
 
 .skills-section .skills-column {
