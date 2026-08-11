@@ -433,6 +433,15 @@ dd {
   background: #ffffff;
 }
 
+.internship-video-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid var(--line);
+  background: #000000;
+  object-fit: contain;
+}
+
 .internship-video-placeholder {
   position: relative;
   display: grid;
