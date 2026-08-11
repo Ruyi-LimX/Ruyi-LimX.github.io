@@ -179,7 +179,6 @@ dd {
   gap: clamp(56px, 9vw, 112px);
 }
 
-.eyebrow,
 .section-label {
   margin-bottom: 18px;
   color: var(--accent);
