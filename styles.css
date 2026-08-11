@@ -333,8 +333,15 @@ dd {
   gap: 24px;
 }
 
+.entry-title-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
 .entry-heading h3 {
-  margin-bottom: 7px;
+  margin-bottom: 0;
   font-size: 26px;
   letter-spacing: -0.025em;
 }
