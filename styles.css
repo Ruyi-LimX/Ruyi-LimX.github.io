@@ -426,7 +426,7 @@ dd {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   gap: 16px;
 }
 
@@ -446,6 +446,16 @@ dd {
 .internship-media-heading > p {
   color: var(--text-faint);
   font-size: 12px;
+}
+
+.internship-update-note {
+  margin: 0 0 18px;
+  padding: 9px 12px;
+  border-left: 2px solid var(--accent);
+  background: var(--surface);
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .internship-media-rail {
