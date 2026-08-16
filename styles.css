@@ -451,9 +451,9 @@ dd {
 .internship-update-note {
   margin: 0 0 18px;
   padding: 9px 12px;
-  border-left: 2px solid var(--accent);
+  border-left: 2px solid #c62828;
   background: var(--surface);
-  color: var(--text-soft);
+  color: #c62828;
   font-size: 13px;
   line-height: 1.6;
 }
@@ -738,6 +738,17 @@ dd {
 
 .competition-details strong {
   color: var(--text);
+}
+
+.event-source-link {
+  color: var(--accent);
+  font-weight: 650;
+}
+
+.event-source-link:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .skills-section .skills-column {
